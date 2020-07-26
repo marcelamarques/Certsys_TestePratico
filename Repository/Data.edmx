@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CertsysDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Configuration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="distance_total_min" Type="float" />
+          <Property Name="distance_total" Type="float" />
+          <Property Name="distance_vao_min" Type="float" />
+          <Property Name="distance_vao_max" Type="float" />
+          <Property Name="distance_base_reinforcement_max" Type="float" />
+        </EntityType>
+        <EntityType Name="Pilar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="position" Type="int" />
+          <Property Name="distance" Type="float" />
+          <Property Name="reinforced" Type="bit" />
+        </EntityType>
+        <EntityContainer Name="CertsysDatabaseModelStoreContainer">
+          <EntitySet Name="Configuration" EntityType="Self.Configuration" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Pilar" EntityType="Self.Pilar" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CertsysDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Configuration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="distance_total_min" Type="Double" />
+          <Property Name="distance_total" Type="Double" />
+          <Property Name="distance_vao_min" Type="Double" />
+          <Property Name="distance_vao_max" Type="Double" />
+          <Property Name="distance_base_reinforcement_max" Type="Double" />
+        </EntityType>
+        <EntityType Name="Pilar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="position" Type="Int32" />
+          <Property Name="distance" Type="Double" />
+          <Property Name="reinforced" Type="Boolean" />
+        </EntityType>
+        <EntityContainer Name="CertsysDatabaseEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Configurations" EntityType="Self.Configuration" />
+          <EntitySet Name="Pilars" EntityType="Self.Pilar" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CertsysDatabaseModelStoreContainer" CdmEntityContainer="CertsysDatabaseEntities">
+          <EntitySetMapping Name="Configurations">
+            <EntityTypeMapping TypeName="CertsysDatabaseModel.Configuration">
+              <MappingFragment StoreEntitySet="Configuration">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="distance_total_min" ColumnName="distance_total_min" />
+                <ScalarProperty Name="distance_total" ColumnName="distance_total" />
+                <ScalarProperty Name="distance_vao_min" ColumnName="distance_vao_min" />
+                <ScalarProperty Name="distance_vao_max" ColumnName="distance_vao_max" />
+                <ScalarProperty Name="distance_base_reinforcement_max" ColumnName="distance_base_reinforcement_max" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pilars">
+            <EntityTypeMapping TypeName="CertsysDatabaseModel.Pilar">
+              <MappingFragment StoreEntitySet="Pilar">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="position" ColumnName="position" />
+                <ScalarProperty Name="distance" ColumnName="distance" />
+                <ScalarProperty Name="reinforced" ColumnName="reinforced" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

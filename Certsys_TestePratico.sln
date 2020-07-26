@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Certsys.Domain", "Certsys.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Certsys.Services", "..\Certsys.Services\Certsys.Services.csproj", "{EEDA61EA-8CEA-4735-8FF3-858EBDB775E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{6327EB4C-653D-4FCB-9E69-D009D98F3A86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -127,6 +129,26 @@ Global
 		{EEDA61EA-8CEA-4735-8FF3-858EBDB775E9}.Release|x64.Build.0 = Release|Any CPU
 		{EEDA61EA-8CEA-4735-8FF3-858EBDB775E9}.Release|x86.ActiveCfg = Release|Any CPU
 		{EEDA61EA-8CEA-4735-8FF3-858EBDB775E9}.Release|x86.Build.0 = Release|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Debug|ARM.Build.0 = Debug|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Debug|x64.Build.0 = Debug|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Debug|x86.Build.0 = Debug|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Release|ARM.ActiveCfg = Release|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Release|ARM.Build.0 = Release|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Release|ARM64.Build.0 = Release|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Release|x64.ActiveCfg = Release|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Release|x64.Build.0 = Release|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Release|x86.ActiveCfg = Release|Any CPU
+		{6327EB4C-653D-4FCB-9E69-D009D98F3A86}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
