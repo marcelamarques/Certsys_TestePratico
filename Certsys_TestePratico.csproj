@@ -53,7 +53,16 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="ProjectPilars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectPilars.Designer.cs">
+      <DependentUpon>ProjectPilars.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ProjectPilars.resx">
+      <DependentUpon>ProjectPilars.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
