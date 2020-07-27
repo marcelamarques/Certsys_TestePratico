@@ -16,9 +16,9 @@ namespace Certsys.Domain
 		[Key]
 		public int Id { get; set; }
 
-		private int _distMaxvao;
+		private double _distMaxvao;
 		[Column, Required]
-		public int DistanciaMaxVao
+		public double DistanciaMaxVao
 		{
 			get { return _distMaxvao; }
 			set { _distMaxvao = value; }
@@ -30,6 +30,14 @@ namespace Certsys.Domain
 		{
 			get { return _distMaxBaseReinforcement; }
 			set { _distMaxBaseReinforcement = value; }
+		}
+
+		private double _distTotal;
+		[Column, Required]
+		public double DistanceTotal
+		{
+			get { return _distTotal; }
+			set { _distTotal = value; }
 		}
 
 	}

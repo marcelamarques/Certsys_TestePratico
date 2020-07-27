@@ -37,5 +37,29 @@ namespace Certsys.Domain
 
 			Pilars = new List<Pilar>();
 		}
+
+		public override string ToString()
+		{
+			List<Pilar> aux = Pilars.Where(w => w.Reinforced).ToList();
+			Pilar first = aux.FirstOrDefault();
+			Pilar last = aux.LastOrDefault();
+			aux.RemoveAt(aux.Count - 1);
+			aux.RemoveAt(0);
+			
+
+			string retorno = $"Quantidade de pilares: {Pilars.Count}. Pilares com reforço: {first}, ";
+			string auxretorno = "";
+
+			foreach (Pilar item in Pilars)
+			{
+				if (item.Reinforced)
+				{
+					auxretorno += $", {item.Position}";
+				}
+			}
+			auxretorno += $", {last.Position}.";
+
+			return retorno + auxretorno;
+		}
 	}
 }

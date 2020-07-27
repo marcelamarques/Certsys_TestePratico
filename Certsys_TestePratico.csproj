@@ -85,5 +85,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Certsys.Services\Certsys.Services.csproj">
+      <Project>{eeda61ea-8cea-4735-8ff3-858ebdb775e9}</Project>
+      <Name>Certsys.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="Certsys.Domain\Certsys.Domain.csproj">
+      <Project>{94aecad3-e616-43c4-91d5-8e433d5b203a}</Project>
+      <Name>Certsys.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="Repository\Repository.csproj">
+      <Project>{6327eb4c-653d-4fcb-9e69-d009d98f3a86}</Project>
+      <Name>Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
