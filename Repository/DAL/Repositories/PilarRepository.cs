@@ -1,4 +1,5 @@
-﻿using Repository.DAL.Repositories.Base;
+﻿using Certsys.Domain;
+using Repository.DAL.Repositories.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
